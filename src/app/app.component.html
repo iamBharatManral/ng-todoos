@@ -1,10 +1,32 @@
 <div class="container">
   <header>
     <h1>ToDooos</h1>
+    <div class="count"><img src="./assets/todo.svg" alt="todo icon"><span>{{itemCount}}</span></div>
   </header>
   <main>
     <h3>{{username}}'s Todo List</h3>
-    <h6>{{ itemCount }} Items</h6>
+    <div class="newItem">
+      <form action="#">
+        <input type="text" #todoItem placeholder="enter new task">
+        <button type="submit" (click)="add(todoItem.value); todoItem.value = ''">Add</button>
+      </form>
+    </div>
+    <div class="items">
+      <div class="item">
+        <div class="number">#</div>
+        <div class="task">Task</div>
+        <div class="done">Done</div>
+      </div>
+      <div class="item" *ngFor="let item of items; let i = index">
+        <div class="number">{{i + 1}}</div>
+        <div class="task">{{item.task}}</div>
+        <div class="done"><input type="checkbox" [(ngModel)]="item.complete"></div>
+      </div>
+    </div>
+    <div class="option">
+      <input type="checkbox" name="option" id="option" [(ngModel)]="showCompleted">
+      <p>Show completed tasks</p>
+    </div>
   </main>
   <footer>
     Powered By <a href="https://angular.io/">Angular</a>
