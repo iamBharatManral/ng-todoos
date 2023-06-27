@@ -1,10 +1,9 @@
 <div class="container">
   <header>
-    <h1>ToDooos</h1>
-    <div class="count"><img src="./assets/todo.svg" alt="todo icon"><span>{{itemCount}}</span></div>
+    <h1>ToDooos <sup class="count">{{itemCount}}</sup></h1>
   </header>
   <main>
-    <h3>{{username}}'s Todo List</h3>
+    <h3>Todo List</h3>
     <div class="newItem">
       <form action="#">
         <input type="text" #todoItem placeholder="enter new task">
@@ -28,7 +27,4 @@
       <p>Show completed tasks</p>
     </div>
   </main>
-  <footer>
-    Powered By <a href="https://angular.io/">Angular</a>
-  </footer>
 </div>

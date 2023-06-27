@@ -1,30 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap');
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Bacasime Antique', serif;
-  border-radius: 10px;
-
-}
-
 .container{
   display: grid;
   grid-template-rows: 1fr 6fr 1fr;
   text-align: center;
   min-height: 100vh;
-  gap: 1rem;
+  margin: 1rem;
 }
 
 header{
   padding: 1rem;
-  background: indianred;
-  color: gold;
+  color: white;
   font-size: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-height: 10vh;
 }
 
 h1 {
@@ -32,27 +17,12 @@ h1 {
 }
 
 .count {
-  margin-right: 2rem;
-}
-img{
-  width: 50px;
-  height: 50px;
-  color: gold;
-}
-span{
-  display: inline-flex;
+  display: inline-block;
   background: gold;
+  width: 1em;
+  height: 1em;
   color: black;
-  right: 40px;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  position: absolute;
 }
-
 main{
   display: flex;
   flex-direction: column;
@@ -137,20 +107,8 @@ input[type="checkbox"]{
   font-size: 1.5rem;
 }
 h3 {
-  background: gold;
+  background: #e1cd71;
   color: black;
   padding: 2rem;
   font-size: 2rem;
 }
-
-footer{
-  max-height: 10vh;
-  background: #e1cd71;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-size: 1.5rem;
-}
-
