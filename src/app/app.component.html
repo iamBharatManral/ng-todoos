@@ -3,10 +3,9 @@
     <h1>ToDooos <sup class="count">{{itemCount}}</sup></h1>
   </header>
   <main>
-    <h3>Todo List</h3>
     <div class="newItem">
       <form action="#">
-        <input type="text" #todoItem placeholder="enter new task">
+        <input type="text" #todoItem placeholder="enter new task...">
         <button type="submit" (click)="add(todoItem.value); todoItem.value = ''">Add</button>
       </form>
     </div>
